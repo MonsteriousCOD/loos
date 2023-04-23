@@ -1,24 +1,78 @@
-self.__BUILD_MANIFEST = function(s, e, t, c, a, n) {
-    return {
-        __rewrites: {
-            beforeFiles: [],
-            afterFiles: [{
-                source: "/graph/:tokenId",
-                destination: t
-            }, {
-                source: "/token/:tokenId",
-                destination: t
-            }],
-            fallback: []
-        },
-        "/": [s, e, "static/chunks/pages/index-2b6e5d7cf83782d1.js"],
-        "/_error": ["static/chunks/pages/_error-8353112a01355ec2.js"],
-        "/accounts/[accountId]": [s, c, "static/chunks/pages/accounts/[accountId]-8ddfe841e325ee92.js"],
-        "/explore": [s, e, c, "static/chunks/pages/explore-2510dfa5dd4e0db0.js"],
-        "/mint": ["static/chunks/610-dd065a6521e4391d.js", "static/chunks/pages/mint-f417d28a47b68c04.js"],
-        "/predictions/[tokenId]": [a, n, "static/chunks/pages/predictions/[tokenId]-77c6a5ac6f6c8d1f.js"],
-        "/tokens/[tokenId]": [s, e, a, n, "static/chunks/pages/tokens/[tokenId]-19cfab720f3d5648.js"],
-        sortedPages: ["/", "/_app", "/_error", "/accounts/[accountId]", "/explore", "/mint", "/predictions/[tokenId]", "/tokens/[tokenId]"]
-    }
-}("static/chunks/664-e432d276bc67604d.js", "static/chunks/675-182ab2d8b63aa1d5.js", "/api/token/:tokenId", "static/chunks/972-00d0635f5e289c55.js", "static/chunks/195-f25e64cdf615679c.js", "static/chunks/451-f3252c2a8ecfa026.js"),
-self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB();
+<!DOCTYPE html>
+<html data-bs-theme="dark" class="h-100">
+    <head>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <meta name="description" content="NFTs tracing their collectors’ collection graph to project future acquisitions"/>
+        <link rel="icon" href="/favicon.ico"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@arikan"/>
+        <meta name="twitter:description" content="NFTs tracing their collectors’ collection graph to project future acquisitions"/>
+        <meta name="twitter:image" content="https://socialcontracts.jpg.space/SocialContracts-Card.png"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="NFTs tracing their collectors’ collection graph to project future acquisitions"/>
+        <meta property="og:image" content="https://socialcontracts.jpg.space/SocialContracts-Card.png"/>
+        <title>Social Contracts - Mint</title>
+        <meta name="twitter:title" content="Social Contracts - Mint"/>
+        <meta property="og:title" content="Social Contracts - Mint"/>
+        <meta property="og:url" content="https://socialcontracts.jpg.space/mint"/>
+        <meta name="next-head-count" content="15"/>
+        <link rel="preload" href="/_next/static/css/3877f337e5f587be.css" as="style"/>
+        <link rel="stylesheet" href="/_next/static/css/3877f337e5f587be.css" data-n-g=""/>
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+        <script src="/_next/static/chunks/webpack-dcf4136cb4ed4a3e.js" defer=""></script>
+        <script src="/_next/static/chunks/framework-3b5a00d5d7e8d93b.js" defer=""></script>
+        <script src="/_next/static/chunks/main-8e1545c58b6c8849.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/_app-6e1e927a0bad1695.js" defer=""></script>
+        <script src="/_next/static/chunks/610-dd065a6521e4391d.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/mint-f417d28a47b68c04.js" defer=""></script>
+        <script src="/_next/static/cHocOFLj6xVGfAKYbAEf9/_buildManifest.js" defer=""></script>
+        <script src="/_next/static/cHocOFLj6xVGfAKYbAEf9/_ssgManifest.js" defer=""></script>
+    </head>
+    <body class="h-100">
+        <div id="__next">
+            <div class="wrapper h-100 mint">
+                <div class="mint-page container d-flex flex-column h-100 align-items-center justify-content-center">
+                    <div class="steps d-flex align-items-center justify-content-between mb-5">
+                        <div class="step d-flex align-items-center current">
+                            <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                <span class="d-flex align-items-center justify-content-center">1</span>
+                            </div>
+                            <span class="label">Start tracing</span>
+                            <div class="path"></div>
+                        </div>
+                        <div class="step d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                <span class="d-flex align-items-center justify-content-center">2</span>
+                            </div>
+                            <span class="label">Mint</span>
+                            <div class="path"></div>
+                        </div>
+                        <div class="step d-flex align-items-center">
+                            <div class="icon d-flex align-items-center justify-content-center rounded-circle">
+                                <span class="d-flex align-items-center justify-content-center">3</span>
+                            </div>
+                            <span class="label">Generate graph</span>
+                        </div>
+                    </div>
+                    <div class="steps d-flex align-items-center justify-content-between mb-5">
+                        <div>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-lg-8 p-5 border rounded text-center">
+                                        <h3>Start tracing</h3>
+                                        <p>First, your account’s NFT collection will be traced, generating a pre-reveal graph. If you don’t have any NFTs, this will be your first, and your graph will be created based on other accounts that have minted and own NFTs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+            {"props":{"pageProps":{}},"page":"/mint","query":{},"buildId":"cHocOFLj6xVGfAKYbAEf9","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+        </script>
+    </body>
+</html>
